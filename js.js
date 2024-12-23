@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM  from 'react-dom/client';
+
 const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "abc" },
@@ -7,6 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(heading);
 
 console.log(heading); //object
+
 
 /**
  * <div id = 'parent'>
@@ -22,7 +26,7 @@ const parent = React.createElement(
   React.createElement(
     "div",
     { id: "child" },
-    React.createElement("h1", {}, "I am H1 tag")
+    React.createElement("h1", {}, "I am H1 tag react")
   )
 );
 
@@ -42,7 +46,7 @@ const sibling = React.createElement(
   { id: "parent" },
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", {}, "I am H1 tag"),
-    React.createElement("p", {}, "I am Akshata"),
+    React.createElement("p", {}, "I am Akshata Ambihhhhhhhh"),
   ])
 );
 root.render(sibling);
